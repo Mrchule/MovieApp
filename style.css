@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+body {
+  width: 100vw;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar {
+  height: 4.5rem;
+  width: 100vw;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0px;
+  box-sizing: border-box;
+  z-index: 99;
+}
+.left {
+  width: 50%;
+}
+.left ul {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.left ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+  position: relative;
+}
+.left ul li:hover{
+background-color: #323131cc;
+}
+.left ul li::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 3px;
+  width: 0px;
+  transition: .5s ease;
+}
+.left ul li:hover::before {
+  width: 100%;
+}
+.left ul li:active{
+  background-color: #323131cc;
+}
+.left ul li img{
+  height: 35px;
+  width: 80px;
+}
+.right {
+  width: 30%;
+  margin-right: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.right input {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  outline: none;
+  border-radius: 10px 0 0px 10px;
+}
+.right button {
+  border-radius: 0px 10px 10px 0px;
+  height: 40px;
+  border: none;
+  outline: none;
+  width: 100px;
+  cursor: pointer;
+  background-color: white;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  background-color: black;
+}
+.img-div {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.name{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.year{
+  font-weight: 700;
+}
+.movies {
+  margin: 10px;
+  transition: 0.2s ease-in-out;
+  height: 420px;
+  overflow: hidden;
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #1a1a1a;
+  color:white
+}
+.movie {
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+.movie:hover {
+  scale: 1.1;
+}
+.rating{
+  color: #c6c60d;
+  font-size: 20px;
+}

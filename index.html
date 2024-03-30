@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main" onload=Moviesss()>
+      <div class="nav-bar">
+        <div class="left">
+          <ul>
+            <li><a href="#"><img src="imdb.png" alt="logo"></a></li>
+            <li onclick="Moviesss()">Home</li>
+            <li onclick="Popular()" value="popular">Popular</li>
+            <li onclick="Top_rated()" value="top_rated">Top Rated</li>
+            <li onclick="Upcoming()" value="upcoming">Upcoming</li>
+          </ul>
+        </div>
+        <div class="right">
+          <input type="search" id="moviename" placeholder="search movies" />
+          <button onclick="SearchByname()">Search</button>
+        </div>
+      </div>
+      <div class="container"></div>
+    </div>
+    <div id="loader">
+
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
