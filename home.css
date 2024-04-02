@@ -10,6 +10,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.main {
+  width: 100vw;
+}
 .nav-bar {
   height: 4.5rem;
   width: 100vw;
@@ -39,7 +42,7 @@ body {
   transition: 0.2s all ease-in-out;
   position: relative;
 }
-.left ul li a{
+.left ul li a {
   color: white;
   text-decoration: none;
 }
@@ -96,11 +99,10 @@ body {
   padding: 10px;
   background-color: white;
   align-items: center;
-  position:sticky;
-  top:70px;
-  left:0px;
-  z-index:5;
-  
+  position: sticky;
+  top: 70px;
+  left: 0px;
+  z-index: 5;
 }
 .views-btn {
   margin-right: 100px;
@@ -115,86 +117,29 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
-.container {
+.big-movie {
   display: flex;
-  width: 100vw;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  transition: 0.2s ease-in-out;
-  background-color: black;
-}
-.img-div {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.name {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.year {
-  font-weight: 700;
-}
-.movies {
-  margin: 10px;
-  transition: 0.2s ease-in-out;
-  height: 420px;
-  overflow: hidden;
-  max-width: 250px;
-  padding: 10px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: relative;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: #1a1a1a;
-  color: white;
-}
-
-.movie {
-  height: 300px;
-  width: 250px;
-  object-fit: cover;
-  overflow: hidden;
-  transition: 0.2s ease;
-}
-.movie:hover {
-  scale: 1.1;
-}
-.rating {
-  color: #c6c60d;
-  font-size: 20px;
-}
-.container-lines {
   width: 100%;
+}
+.leftbig {
+  width: 70%;
+  height: 80vh;
+  border: 2px solid red;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.movies-lines {
-  display: flex;
-  justify-content: start;
-  margin-bottom: 3px;
-  transition: 0.2s ease-in-out;
-  overflow: hidden;
-  padding: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  gap: 20px;
-  background-color: #1a1a1a;
-  color: white;
-  width: 100%;
+.rightbig {
+  width: 30%;
+  height: 80vh;
+  border: 2px solid red;
 }
-.movie-lines {
-  height: 130px;
-  width: 100%;
+.img-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
-.movie-lines:hover {
-  cursor: pointer;
-  scale: 1.1;
-}
-.img-div{
-  border-radius: 10px;
-  min-width: 250px;
-  object-fit: cover;
+.img-container img{
+    position: absolute;
 }

@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IMDB clone</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
     <div class="main">
@@ -34,15 +25,26 @@
       </div>
       <div class="Views">
         <h2 class="heading">Movie shown by Trending</h2>
-        <div class="views-btn">
-          <button id="btnn">
-            <i class="fa-solid fa-grip grid"></i>
-          </button>
+      </div>
+      <div class="big-movie">
+        <div class="leftbig">
+          <button>back</button>
+          <div class="img-container">
+            <img src="imdb.png" alt="" />
+            <img src="imdb.png" alt="" />
+            <img src="imdb.png" alt="" />
+            <img src="imdb.png" alt="" />
+          </div>
+          <button>next</button>
+        </div>
+        <div class="rightbig">
+          <div class="shortmovie">
+            <h1>movie 1</h1>
+          </div>
+          <div class="shortmovie">movie 2</div>
+          <div class="shortmovie">movie 3</div>
         </div>
       </div>
-
-      <div class="container"></div>
     </div>
-    <script src="scripts.js"></script>
   </body>
 </html>
